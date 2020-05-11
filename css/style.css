@@ -1,0 +1,109 @@
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.card {
+  height: 345px;
+  width: 225px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.list {
+  height: -webkit-fill-available;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  position: fixed;
+  justify-content: center;
+}
+
+.card_text {
+  height: 47px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #343434;
+  font-weight: bold;
+}
+
+.card_text > span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card_image {
+  height: 295px;
+  width: 100%;
+}
+
+.filter {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.68);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 295px;
+  text-align: center;
+  opacity: 0;
+  transition: 500ms all;
+}
+
+.filter:hover {
+  opacity: 1;
+}
+
+.filter > span {
+  z-index: 3;
+}
+
+.filter_info {
+  top: 145px;
+  position: relative;
+  font-size: 16px;
+  font-family: "Helvetica Neue", "Open Sans", Arial, sans-serif;
+  color: rgb(187, 187, 187);
+  transition: 1s all;
+}
+
+.filter_info:hover {
+  font-size: 17px;
+  color: #fff;
+}
+
+.card_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html {
+  background: linear-gradient(to bottom right, blue, white);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
